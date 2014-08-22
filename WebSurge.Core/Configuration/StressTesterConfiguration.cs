@@ -121,10 +121,6 @@ Allows to add custom authentication to a request after you've captured say a bea
         [Browsable(false)]
         public int LastThreads { get; set; }
 
-        [Description("Determines if certificate errors are ignored. Must restart application for changes to take effect.")]
-        [Category("Test Operation")]
-        public bool IgnoreCertificateErrors { get; set; }
-
         [Browsable(false)]
         public int LastSecondsToRun { get; set; }
 
@@ -139,8 +135,6 @@ Allows to add custom authentication to a request after you've captured say a bea
 
             LastSecondsToRun = 10;
             LastThreads = 2;
-
-            IgnoreCertificateErrors = false;
         }
     }
 }
